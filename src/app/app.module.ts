@@ -11,6 +11,15 @@ import { ColorComponent } from './color/color.component';
 import { CustomerComponent } from './customer/customer.component';
 import { CarDetailComponent } from './components/car-detail/car-detail.component';
 import { RentAlComponent } from './components/rent-al/rent-al.component';
+import { VatAddedPipe } from './pipes/vat-added.pipe';
+import { DescriptionPipe } from './pipes/description.pipe';
+import { FilterBrandPipe } from './pipes/filter-brand.pipe';
+import { FilterColorPipe } from './pipes/filter-color.pipe';
+import { LoginComponent } from './components/login/login/login.component';
+import { PaymentComponent } from './components/payment/payment/payment.component';
+import { AccountComponent } from './account/account/account.component';
+import { FooterComponent } from './footer/footer/footer.component';
+import { RegisterComponent } from './components/register/register/register.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +31,16 @@ import { RentAlComponent } from './components/rent-al/rent-al.component';
     ColorComponent,
     CustomerComponent,
     CarDetailComponent,
-    RentAlComponent
+    RentAlComponent,
+    VatAddedPipe,
+    DescriptionPipe,
+    FilterBrandPipe,
+    FilterColorPipe,
+    LoginComponent,
+    PaymentComponent,
+    AccountComponent,
+    FooterComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
