@@ -1,0 +1,22 @@
+<table *ngIf="dataLoaded != false" class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Brand Name</th>
+      <th>Color Name</th>
+      <th>Model Year</th>
+      <th>Daily Price</th>
+      <th>Description</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tr *ngFor="let car of carDetails">
+    <td>{{ car.carId }}</td>
+    <td>{{ car.brandName }}</td>
+    <td>{{ car.colorName }}</td>
+    <td>{{ car.modelYear }}</td>
+    <td>{{ car.dailyPrice }}€</td>
+    <td>{{ car.description }}</td>
+    <br>
+    </tr>
+</table>

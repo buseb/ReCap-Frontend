@@ -1,0 +1,35 @@
+<table *ngIf="dataLoaded == true" class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Car Name</th>
+        <th scope="col">Brand Id</th>
+        <th scope="col">Color Id</th>
+        <th scope="col">Model Year</th>
+        <th scope="col">Daily Price</th>
+        <th scope="col">Descriptions</th>
+        <th scope="col">Detail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let car of cars">
+        <th scope="row">{{ car.id }}</th>
+        <td>{{ car.name }}</td>
+        <td>{{ car.brandId }}</td>
+        <td>{{ car.colorId }}</td>
+        <td>{{ car.modelYear }}</td>
+        <td>{{ car.dailyPrice }}</td>
+        <td>{{ car.description }}</td>
+        <br />
+        <button
+          (click)="setButtonDetail(currentCar)"
+          routerLink="/cars/getcardetails/{{ car.id }}"
+          [class]="getCurrentButtonClass(car)"
+          type="button"
+          class="btn btn-primary"
+        >
+          Detaya Git
+        </button>
+      </tr>
+    </tbody>
+  </table>
